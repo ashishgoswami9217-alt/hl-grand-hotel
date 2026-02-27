@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HL GRAND HOTEL</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   EDIT DETAILS HERE
+========================= */
+:root{
+--hotel-name: "HL GRAND HOTEL";
+--price: "₹ 3500 / Per Day";
+--phone: "9217104119";
+--email: "goswami9217@gmail.com";
+--address: "1/1000, Patrakar Puram, Vinay Khand 1, Gomti Nagar, Lucknow – 226010";
+}
+/* ========================= */
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f4f4f4;color:#333;scroll-behavior:smooth}
+header{
+background:#0d1b2a;color:white;
+display:flex;justify-content:space-between;
+align-items:center;padding:20px 40px;
+position:fixed;width:100%;z-index:1000
+}
+header h1{color:gold}
+nav a{color:white;text-decoration:none;margin-left:20px}
+section{padding:100px 50px;text-align:center}
+h2{margin-bottom:30px;color:#0d1b2a}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('exterior.jpg') center/cover no-repeat;
+display:flex;justify-content:center;align-items:center;
+color:white;text-align:center;position:relative
+}
+.hero::before{
+content:"";position:absolute;width:100%;height:100%;
+background:rgba(0,0,0,0.6)
+}
+.hero-content{position:relative}
+.btn{
+background:gold;color:black;
+padding:12px 25px;border:none;
+border-radius:5px;font-weight:600;
+cursor:pointer
+}
+
+/* CARD */
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+max-width:1000px;
+margin:20px auto;
+text-align:left
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px
+}
+.gallery img{
+width:100%;border-radius:10px
+}
+
+/* PRICING */
+.price-box{
+background:#0d1b2a;color:white;
+padding:40px;border-radius:10px;
+max-width:400px;margin:auto
+}
+
+/* BOOKING */
+.booking input, .booking select{
+width:100%;padding:10px;margin:10px 0;
+border-radius:5px;border:1px solid #ccc
+}
+.booking button{
+background:gold;border:none;
+padding:12px;width:100%;
+font-weight:600;cursor:pointer
+}
+
+/* RULES */
+.rules ul{margin-left:20px;line-height:1.8}
+
+/* MAP */
+.map iframe{
+width:100%;height:400px;
+border:none;border-radius:10px
+}
+
+/* CONTACT */
+.contact a{
+text-decoration:none;color:#0d1b2a;font-weight:600
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;right:20px;
+background:#25D366;color:white;
+padding:15px;border-radius:50%;
+font-size:20px;text-decoration:none
+}
+
+footer{
+background:black;color:white;
+padding:20px;text-align:center
+}
+
+@media(max-width:768px){
+header{flex-direction:column}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>HL GRAND HOTEL</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#pricing">Pricing</a>
+<a href="#rules">Rules</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<div class="hero-content">
+<h2>Luxury & Comfort in Gomti Nagar</h2>
+<p style="margin:20px 0">Premium Stay Experience</p>
+<a href="#booking"><button class="btn">Book Now</button></a>
+</div>
+</div>
+
+<section id="about">
+<h2>About Us</h2>
+<div class="card">
+<p>
+Located at <b>1/1000, Patrakar Puram, Vinay Khand 1, Gomti Nagar, Lucknow – 226010</b>,
+HL GRAND HOTEL provides modern rooms, security, banquet facilities,
+in-room dining and premium hospitality for business and family stays.
+</p>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="exterior.jpg">
+<img src="entrance.jpg">
+<img src="reception.jpg">
+</div>
+</section>
+
+<section id="pricing">
+<h2>Room Pricing</h2>
+<div class="price-box">
+<h3>₹ 3500 / Per Day</h3>
+<p>Extra Child Mattress: ₹ 800</p>
+<p>Extra Guest Mattress: ₹ 1000</p>
+</div>
+</section>
+
+<section id="booking">
+<h2>Online Booking</h2>
+<div class="card booking">
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email">
+<input type="date">
+<input type="date">
+<select>
+<option>Deluxe Room</option>
+<option>Super Deluxe Room</option>
+<option>Family Suite</option>
+</select>
+<button>Confirm Booking</button>
+</div>
+</section>
+
+<section id="rules">
+<h2>Hotel Rules & Policies</h2>
+<div class="card rules">
+<ul>
+<li>Check-In: 12 PM | Check-Out: 11 AM</li>
+<li>Primary guest must be 18+ years.</li>
+<li>Passport, Aadhaar, Driving License & Govt ID accepted.</li>
+<li>Unmarried couples allowed (including hourly stay).</li>
+<li>Pets not allowed.</li>
+<li>Outside food not allowed.</li>
+<li>Smoking & Alcohol allowed.</li>
+<li>Non-veg food allowed.</li>
+<li>Food delivery from Zomato, Swiggy & local apps available.</li>
+<li>Wheelchair accessible (guest must bring own wheelchair).</li>
+<li>Private parties/events allowed.</li>
+<li>1 infant (0-2 yrs) free per room.</li>
+<li>Extra mattress ₹ 800 per child.</li>
+<li>Extra mattress ₹ 1000 per guest.</li>
+</ul>
+</div>
+</section>
+
+<section class="map">
+<h2>Our Location</h2>
+<iframe src="https://www.google.com/maps?q=1/1000,Patrakar%20Puram,Gomti%20Nagar,Lucknow&output=embed"></iframe>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="card contact">
+<p><b>Phone:</b> <a href="tel:9217104119">9217104119</a></p>
+<p><b>Email:</b> <a href="mailto:goswami9217@gmail.com">goswami9217@gmail.com</a></p>
+<p><b>Address:</b> 1/1000, Patrakar Puram, Vinay Khand 1, Gomti Nagar, Lucknow – 226010</p>
+</div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/919217104119" target="_blank">💬</a>
+
+<footer>
+© 2026 HL GRAND HOTEL | All Rights Reserved
+</footer>
+
+</body>
+</html>
